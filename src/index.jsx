@@ -1,5 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import MyForm from './components/ReactForm';
  
 class CounterApp extends React.Component {
   constructor(props) {
@@ -39,6 +40,7 @@ class CounterApp extends React.Component {
         <IncreaseButton increase={this.onIncreaseEventHandler} />
         <CounterDisplay count={this.state.count}/>
         <ResetButton reset={this.onResetEventHandler} />
+        <MyForm />
       </div>
     )
   }
